@@ -12,10 +12,12 @@ h4 {
   font-size: 18px;
 }
 
+.padding-section {
+  padding: 10px;
+}
+
 header {
   background: black;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 main > p > span {
@@ -26,13 +28,37 @@ main > p > span {
   background: black;
   font-family: Impact, "Arial Narrow Bold", sans-serif;
   text-align: center;
+  /* estilos del borde */
+  border: 3px solid tomato;
+  border-radius: 3px;
 }
 .destacar-palabra {
   font-weight: 900;
 }
 
+h2:hover {
+  background: olive;
+}
+
+/*
+  padding-top
+  padding-right 
+  padding-bottom
+  padding-left
+
+*/
 .subrayar-arriba {
   text-decoration: overline;
+}
+
+.padding-titulo {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.margin-titulo {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .tachar {
@@ -48,4 +74,31 @@ main > p > span {
 
 .oliva {
   color: olive;
+}
+
+/* 
+PSEUDOCLASES 
+*/
+
+/*NO VISITADO*/
+a:link {
+  text-decoration: none;
+}
+/*VISITADO */
+a:visited {
+  text-decoration: none;
+}
+/*activo */
+a:active {
+  text-decoration: none;
+  color: greenyellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+/*Hover : posiciono el mouse sobre el link*/
+a:hover {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 89px;
+  background: goldenrod;
 }

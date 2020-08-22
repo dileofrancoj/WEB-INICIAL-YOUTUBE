@@ -1,0 +1,66 @@
+/*
+    FLEXBOX : Conjunto de propiedades css (posicionar elementos en la web)
+*/
+
+/*
+    display:flex;
+    flex-wrap : nowrap | wrap
+    justify-content (posicionamiento horizontal de bloques) : flex-start | flex-end | center | space-around | space-between
+*/
+
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  background: gray;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.padding-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.titulo {
+  height: 100px;
+}
+
+.col {
+  width: 70%;
+  height: 100px;
+  background: violet;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+  margin-right: 20px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+span {
+  font-size: 22px;
+  color: green;
+  font-weight: bold;
+}
+
+/*
+    Propiedades resumidas : 
+    padding : top right bottom left   10 20 30 40
+    padding : top/bottom right/left   20 30
+    padding : 20px ->  20px de arriba abajo izquierda y derecha
+*/
+
+/*
+
+margin : 0 auto;
+
+*/
+.padding {
+  padding: 30px 20px 10px 60px;
+}
