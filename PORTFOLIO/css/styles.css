@@ -1,15 +1,73 @@
-.tomato {
-  background: tomato;
+.header {
+  height: 45vh;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
 }
 
-.rebecca {
-  background: rebeccapurple;
+p {
+  font-size: 18px;
 }
 
-.icon {
-  font-size: 90px;
+.icono {
+  font-size: 48px;
+}
+
+.icono:hover {
+  transform: scale(1.5) rotate(-10deg);
+  transition-duration: 400ms;
+  opacity: 0.9;
+  transition-timing-function: ease-in-out;
+}
+
+.imagen {
+  width: 200px;
+  height: auto;
+}
+
+.subrayar {
+  text-decoration: underline;
+}
+
+.imagen:hover {
+  transform: scale(2);
+  transition-duration: 20s;
+  opacity: 0.5;
+}
+
+.frase-texto {
+  color: #2f58a5;
+  font-size: 32px;
+}
+
+.frase {
+  background: #e8ced4;
+  height: auto;
+}
+
+nav {
+  position: fixed;
 }
 
 .footer {
-  background: ghostwhite;
+  background: darkslategray;
+  color: ghostwhite;
+}
+textarea {
+  resize: none;
+}
+
+.fondo-unicornio {
+  background-image: url("../images/unicuerno.jpg");
+  background-size: cover;
+  opacity: 0.95;
+}
+
+.cajaLoca {
+  background: red;
+}
+
+.cajaLoca:hover {
+  background: blue;
+  transition-duration: 2000ms;
+  transform: rotate(360deg);
 }

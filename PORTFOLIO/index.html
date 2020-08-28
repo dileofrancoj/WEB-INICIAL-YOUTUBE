@@ -17,57 +17,134 @@
     ></script>
   </head>
   <body>
-    <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link text-white" href="#frase">Frase</a>
+
+          </li>
+        </ul>
+        <a href="propuestas.html" class="btn btn-danger text-white badge-pill">Registrate</a>
+     
+      </div>
+    </nav>
+    <header class="container-fluid header">
       <div class="row">
         <div class="col">
-          <h1 class="text-center">Franco Di Leo</h1>
+          <h1 class="text-white p-5">Franco Di Leo</h1>
         </div>
       </div>
     </header>
+
+    
     <!-- draw.io -->
-    <div class="container">
-      <h2 class="text-center">About me</h2>
+    <div class="container mt-5" id="about">
+      <h2 class="text-center mt-3">About me</h2>
       <div class="row mt-5">
         <div class="col-xl-4 col-lg-6 col-xs-12 p-5 tomato">
-          <h2>Imágen</h2>
+          <img src="images/index.png" class="imagen" />
         </div>
-        <div class="col-xl-8 col-lg-6 col-xs-12 p-2 rebecca">
+        <div class="col-xl-8 col-lg-6 col-xs-12 p-2 rebecca p-3">
           <h2 class="text-white">Acerca ...</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             velit rem corporis quibusdam sunt quisquam nihil omnis quis neque,
             nemo aliquam, dolorem facilis error quas non unde. Molestias
-            exercitationem, unde eligendi quia provident quod quam beatae
-            necessitatibus maxime inventore, voluptatum eum similique
-            temporibus. Debitis obcaecati saepe natus provident reprehenderit
-            sed.
+            exercitationem, unde eligendi quia provident quod quam beatae sed.
           </p>
         </div>
       </div>
 
-      <section class="row mt-5 justify-content-center">
-        <div class="col-xl-4 col-md-6 col-6">
-          <i style="color: orange" class="fab fa-html5 icon"></i>
+      <div class="row">
+        <div class="col-xl-8 col-lg-6 col-xs-12 p-5">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
+            repellendus ducimus odio beatae corrupti praesentium at maxime
+            consequatur explicabo sit!
+          </p>
         </div>
-        <div class="col-xl-4 col-md-6 col-6">
-          <i style="color: orange" class="fab fa-js icon"></i>
+        <div class="col-xl-4 col-lg-6 col-xs-12 p-5">
+          <img src="images/redsocial.jpg" width="250px" height="auto" />
+        </div>
+      </div>
+
+      <section id="skills" class="container">
+        <h2 class="text-center">Skills</h2>
+        <div class="row mt-5">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="row align-items-center">
+              <div class="col-6 d-flex justify-content-center">
+                <i
+                  style="color: orange"
+                  class="fab fa-html5 icono text-center"
+                ></i>
+              </div>
+              <div class="col-6">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  corporis quam cumque, aut molestiae amet nemo laboriosam
+                  maxime et accusamus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="row align-items-center">
+              <div class="col-6 d-flex justify-content-center">
+                <i
+                  style="color: orange"
+                  class="fab fa-html5 icono text-center"
+                ></i>
+              </div>
+              <div class="col-6">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  corporis quam cumque, aut molestiae amet nemo laboriosam
+                  maxime et accusamus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+      <section id="frase" class="container-fluid frase mt-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-6 pt-5 pb-5">
+            <h3 class="text-center frase-texto">"No a la violencia si a la birra" </h3>
+            <h3 class="text-center frase-texto">(amo programar)</h3>
+          </div>
         </div>
       </section>
       <hr />
-      <section>
+      <section class="container-fluid">
+        <h2 class="text-center">Contacto</h2>
         <div class="row mt-5 justify-content-center">
-          <h2 class="text-center">Contacto</h2>
           <div class="col-xl-6 col-lg-6 col-xs-12">
             <form method="POST" action="#">
               <div class="form-group">
+                <label for="nc" >Nombre completo <span class="text-danger"> *</span></label>
                 <input
+                  id="nc"
                   type="text"
                   class="form-control"
+                  required
                   placeholder="Nombre completo"
                 />
               </div>
               <div class="form-group">
+                <label for="mail">Correo electronico <span class="text-danger">*</span></label>
                 <input
+                id="mail"
                   type="email"
                   class="form-control"
                   placeholder="ejemplo@correo.com.ar"
@@ -75,13 +152,15 @@
               </div>
 
               <div class="form-group">
+                <label for="comentario">Comentario <span class="text-danger">*</span></label>
                 <textarea
+                id="comentario"
                   class="form-control"
                   placeholder="Comentario"
                 ></textarea>
               </div>
 
-              <button class="btn btn-outline-primary btn-block">Enviar</button>
+              <button class="btn btn-outline-secondary btn-block">Enviar 📦</button>
             </form>
           </div>
         </div>
@@ -89,19 +168,19 @@
     </div>
 
     <footer class="container-fluid mt-5 footer">
-      <div class="row justify-content-center">
-        <div class="col-3 text-center">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-3 col-12">
           <address>
             <p>Medrano 951 PB 2</p>
           </address>
           <p>Tel. 114412312</p>
-          <i class="fab fa-instagram fa-3x text-danger"></i>
-          <i class="fab fa-linkedin-in fa-3x text-primary"></i>
+          <i class="fab fa-instagram fa-3x text-danger icono"></i>
+          <i class="fab fa-linkedin-in fa-3x text-primary icono"></i>
         </div>
-        <div class="col-3 text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
           <p>Copyright © 1994 Franco Di Leo</p>
         </div>
-        <div class="col-4">
+        <div class="col-lg-3 col-md-3 col-12">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2201045099796!2d-58.42211038407982!3d-34.59859536473542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca62d4cf1563%3A0x686de505d84c67e6!2sAv.%20Medrano%20951%2C%20C1179AAQ%20CABA!5e0!3m2!1ses-419!2sar!4v1598398318272!5m2!1ses-419!2sar"
             width="100%"
